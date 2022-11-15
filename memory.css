@@ -1,0 +1,154 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: white;
+  width: 750px;
+  height: max-content !important;
+  margin: 0 auto;
+  border: 3px solid blue;
+  padding: 0 2em 1em;
+}
+h1 {
+  font-size: 150%;
+  color: blue;
+  margin-bottom: 0.5em;
+}
+label {
+  float: left;
+  width: 8em;
+}
+input,
+select {
+  width: 10em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+input[type="checkbox"] {
+  width: 2em;
+}
+header p {
+  margin: 0 2em 1em 0;
+}
+#new_game,
+#player,
+#high_score,
+#correct {
+  float: left;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  row-gap: 10px;
+  width: 100%;
+  height: max-content;
+}
+
+.card {
+  position: relative;
+  height: 100px;
+  width: 80px;
+}
+
+#cards img {
+  height: 100px;
+  width: 80px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  /* float: left;  */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card_front {
+  border-radius: 12px;
+}
+
+.clear {
+  clear: both;
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease 1s forwards;
+  -webkit-animation: fadeOut ease 1s forwards;
+  -moz-animation: fadeOut ease 1s forwards;
+  -o-animation: fadeOut ease 1s forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
